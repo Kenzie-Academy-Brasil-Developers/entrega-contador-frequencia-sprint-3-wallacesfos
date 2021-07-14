@@ -1,0 +1,52 @@
+body{
+    display:flex;
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container{
+    display:flex;
+    color: lightgray;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textInput{
+    margin-top: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+
+}
+
+#countButton{
+    width: 70%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 10px 5px 5px black;
+}
+
+#countButton:hover{
+    box-shadow: inset 0 0 1em gold, 0 0 1em red;
+}
+
+
+@media(min-width: 769px){
+    .container{
+        width: 100%
+    }
+    #textInput{
+        width: 80%;
+    }
+    #countButton{
+        width: 30%;
+    }
+    #lettersDiv{
+        width: 80%;
+    }
+}
