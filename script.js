@@ -9,9 +9,16 @@ button.addEventListener("click", function() {
    typedText = typedText.replace(/[^a-z'\s]+/g, "");
 
    for (let i = 0; i < typedText.length; i++) {
-    currentLetter = typedText[i];
-    count(letterCounts, currentLetter)
+        currentLetter = typedText[i];
+
+        if (letterCounts[currentLetter] === undefined) {
+            letterCounts[currentLetter] = 1; 
+        } else { 
+            letterCounts[currentLetter]++; 
+        }
+        
     }
+   
 
     for (let letter in letterCounts) {
         const span = document.createElement("span");
@@ -27,25 +34,20 @@ button.addEventListener("click", function() {
         letters.style.border = '2px solid gray'
         letters.style.marginTop = '20px'
         span.style.color = 'black'
-    
     }
     words = typedText.split(/\s/);
-
+    
     for (let i = 0; i < words.length; i++) {
         const element = words[i];
-        count(lista, element)
+        if (lista[element] === undefined) {
+            lista[element] = 1; 
+        } else { 
+            lista[element]++; 
+        }
     }
 
-    
+   
 
 });
-
-function count(x, y){
-    if (x[y] === undefined) {
-        x[y] = 1; 
-    } else { 
-        x[y]++; 
-    }
-}
 
 
