@@ -45,9 +45,10 @@ button.addEventListener("click", function() {
             lista[element]++; 
         }
     }
-
-   
-
 });
 
+
+function limpar(){
+    window.location.reload();
+}
 
