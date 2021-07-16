@@ -39,16 +39,7 @@ body{
 
 
 @media(min-width: 769px){
-    .container{
-        width: 100%
-    }
-    #textInput{
-        width: 80%;
-    }
-    #countButton{
-        width: 30%;
-    }
-    #lettersDiv{
-        width: 80%;
-    }
+  body{
+      background-color: blue;
+  }
 }

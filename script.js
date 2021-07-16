@@ -45,6 +45,24 @@ button.addEventListener("click", function() {
             lista[element]++; 
         }
     }
+    console.log(lista)
+
+    for(let woords in lista){
+        const span = document.createElement("span");
+        const textContent = `"${woords}": ${lista[woords]}, `;
+        span.innerText = textContent;
+        const letters = document.getElementById("wordsDiv");
+        letters.appendChild(span);
+        letters.style.width = '90%'
+        letters.style.height = '200px'
+        letters.style.backgroundColor = 'lightgray'
+        letters.style.boxShadow = "10px 5px 5px black"
+        letters.style.Color = 'black'
+        letters.style.border = '2px solid gray'
+        letters.style.marginTop = '20px'
+        span.style.color = 'black'
+    }
+
 });
 
 
