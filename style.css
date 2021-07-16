@@ -3,7 +3,14 @@ body{
     justify-content:center;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: blue;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
 }
 
 .container{
@@ -19,6 +26,7 @@ body{
     border-radius: 10px;
     box-shadow: 10px 5px 5px black;
     outline: none;
+    width: 90%
 
 }
 
@@ -28,7 +36,8 @@ body{
     background-color: white;
     border: 1px solid gray;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
     box-shadow: 10px 5px 5px black;
     margin-bottom: 10px;
 }
@@ -39,7 +48,18 @@ body{
 
 
 @media(min-width: 769px){
-  body{
-      background-color: blue;
-  }
+
+  #textInput{
+      width: 100%;
+    }
+  .buttons{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+    #countButton{
+      margin-left: 6px;
+      width: 50%;
+    }
 }
